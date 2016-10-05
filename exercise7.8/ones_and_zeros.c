@@ -8,9 +8,10 @@
 
 #include "ones_and_zeros.h"
 
-void populate_ones_and_zeros_matrix(int mat[][MATRIX_SIZE], int size)
+void populate_ones_and_zeros_matrix(int* matp, int size)
 {
     int r, c;
+    int (*mat)[size] = (int (*)[size])matp; 
     
     for( r = 0; r < size; ++r )
     {
@@ -32,8 +33,10 @@ void populate_ones_and_zeros_matrix(int mat[][MATRIX_SIZE], int size)
     }
 }
 
-void print_ones_and_zeros(int mat[][MATRIX_SIZE], int size)
+void print_ones_and_zeros(int* matp, int size)
 {
+    int (*mat)[size] = (int (*)[size])matp; 
+    
     for(int r = 0; r < size; ++r)
     {
         for(int c = 0; c < size; ++c)

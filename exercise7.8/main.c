@@ -24,8 +24,15 @@
  *      +1  0   -1  -1  -1
  *      0   -1  -1  -1  -1
  */
+
+
+#define MATRIX_SIZE 5
+
 int main(int argc, char** argv) 
 { 
+    (void)(argc);
+    (void)(argv);
+    
     int mat[MATRIX_SIZE][MATRIX_SIZE];
     
     populate_ones_and_zeros_matrix(mat, MATRIX_SIZE);
