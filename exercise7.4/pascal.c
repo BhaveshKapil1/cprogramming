@@ -26,8 +26,7 @@ void populate_pascal_triangle(int* p_mat, int size)
             {
                 if(j > i)
                 {
-                    // do nothing 
-                    ;
+                    break;
                 }
                 else
                 {
