@@ -25,10 +25,14 @@ void populate_pascal_triangle(int* p_mat, int size)
             else
             {
                 if(j > i)
-                // do nothing 
-                ;
+                {
+                    // do nothing 
+                    ;
+                }
                 else
+                {
                     mat[i][j] = mat[i-1][j-1] + mat[i-1][j];
+                }
             }
         }
     }
@@ -43,7 +47,9 @@ void print_matrix(int* matp, int size)
         for(int c = 0; c < size; ++c)
         {
             if(c <= r)
+            {
                 printf("%d     ", mat[r][c]);
+            }
         }
         printf("\n");
     }

@@ -31,3 +31,9 @@
 # Debug files
 *.dSYM/
 *.su
+/exercise7.8/build/
+/exercise7.8/dist/
+/exercise7.6/dist/
+/exercise7.6/build/
+/exercise7.4/build/
+/exercise7.4/dist/
